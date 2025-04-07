@@ -1,0 +1,57 @@
+﻿/*** Bootstrap overrides ***/
+.container {
+    border: 1px solid #cecece;
+    margin-top: 1em;
+}
+
+.jumbotron {
+    background-image: url("../Images/banner.jpg");
+    background-size: 100% 100%; /* Adjust size as needed */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    margin-top: 1em;
+    height:250px;
+}
+
+.btn {
+    margin-bottom: 1em;
+}
+
+label {
+    font-weight: normal;
+}
+
+/*** server controls ***/
+#lblUnitPrice {
+    font-weight: bold;
+}
+
+#lstCart {
+    min-height: 8em;
+}
+
+/*nav links*/
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+    .nav-link:hover {
+        text-decoration: none;
+        color: darkred;
+    }
+
+.checkbox-list input[type="checkbox"],
+.radio-list input[type="radio"] {
+    margin: 10px;
+}
+.checkbox-list label,
+.radio-list label {
+    padding: 5px;
+    display: inline-block; 
+}

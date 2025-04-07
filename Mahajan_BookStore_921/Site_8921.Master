@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site_8921.master.cs" Inherits="Mahajan_BookStore_921.Site_8921" %>
+
+ 
+
+<!DOCTYPE html>
+
+ 
+
+<html>
+
+<head runat="server">
+
+    <title>Master Page- Aditya Mahajan</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="Content/site.css" rel="stylesheet" />
+
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+
+    <script src="Scripts/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+     <form id="form1" runat="server" class="form-horizontal">
+
+        <header class="jumbotron"></header>
+
+        <div class="row">
+
+            <aside class="col-md-2" >
+
+                <nav>
+
+                    <asp:BulletedList ID="blNav" runat="server" DisplayMode="HyperLink" CssClass="nav nav-pills nav-stacked">
+
+                        <asp:ListItem Value="~/Default.aspx">Home</asp:ListItem>
+
+                        <asp:ListItem Value="~/Products_921.aspx">BSS8Products</asp:ListItem>
+
+                        <asp:ListItem Value="~/Cart.aspx">BSSCart</asp:ListItem>
+
+                        <asp:ListItem Value="~/LoginPage.aspx">Login</asp:ListItem>
+
+                         <asp:ListItem Value="~/The_Admin_Sec8_Page.aspx">Admin</asp:ListItem>
+
+                    </asp:BulletedList>
+
+                </nav>
+
+            </aside>
+
+            <main class="col-md-9">
+
+                <asp:Label ID="lblPageHeader" runat="server"></asp:Label> 
+
+                <asp:ContentPlaceHolder ClientIDMode="Static" ID="mainPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+
+            </main>
+
+        </div>
+
+        <div class="row">
+
+            <asp:ContentPlaceHolder ID="footerPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
+
